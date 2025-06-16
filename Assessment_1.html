@@ -1,33 +1,59 @@
-<!-- wrestlers.html -->
+<!-- 
+  Name: Stacey Jones
+  Date: 2025-06-09
+  File: template.html
+  Description: HTML for WLW wrestling website
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Wrestlers</title>
+  <title>World League Wrestling</title>
 </head>
 <body>
+
+  <!-- Header: Contains logo and site title -->
   <header>
-    <h1>World League Wrestling</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="wrestlers.html">Wrestlers</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <img src="logo.png" alt="WLW Logo" style="height: 75px; width: 75px"/>
+    <h1>World League wrestling</h1>
   </header>
 
+  <!-- Navigation: Main site navigation links -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="wrestlers.html">Wrestlers</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content: To be filled in per page -->
   <main>
-    <h2>Meet the Wrestlers</h2>
-    <p>Explore the roster of fierce competitors in the Pro Wrestling Federation.</p>
-    <!-- Wrestler cards would go here -->
+    <section>
+   <article>  
+    </article>
+    </section>
   </main>
 
+  <!-- Footer: Contains secondary navigation or extra info -->
   <footer>
-    <p>&copy; 2025 Pro Wrestling Federation. All rights reserved.</p>
+      Edited in: brackets.io <br>To know more about Brackets.io <a href="http://brackets.io/">"Click Here"</a>
+    <p>&copy; 2025 World League Wrestling. All rights reserved.</p>
   </footer>
+
+    <script>
+    const url = new URL("https://api.example.com/search");
+    url.searchParams.append("query", "wrestling");
+    url.searchParams.append("page", 2);
+
+    console.log("Generated URL:", url.toString());
+    // You can also display it on the page if needed:
+    document.body.insertAdjacentHTML("beforeend", `<p>API URL: ${url}</p>`);
+  </script>
+
 </body>
 </html>
